@@ -1,10 +1,12 @@
-# le-juste-prix
+# The Price is Right - Wild Code School Challenge
 
 
 # Options to add: 
-· Make it possible for the player to choose the range to search, with the related input[range].
-  › Limit range from 0 to 10.000
+## Choose range
+Make it possible for the player to choose the range to search, with the related input range.  
+*Limit range from 0 to 10.000*
 
-· Make it possible for the player to give a limited chance to find the Right Price.
-  › 0 means no limit
-  › Max to 50 attempts
+## Limited attempts
+Make it possible for the player to give limited attempts to find the Right Price.  
+*0 means no limit*  
+*Max to 50 attempts*

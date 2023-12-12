@@ -6,6 +6,9 @@ const playerGuess  = document.querySelector('#playerPrice')
 const guessForm    = document.querySelector('#guessPrice')
 const guessButton  = document.querySelector('#guessButton')
 const mainCounter  = document.querySelector('#mainCounter')
+const tooHighHint  = document.querySelector('#tooHigh')
+const tooLowsHint  = document.querySelector('#tooLows')
+
 
 //## Specific vars 
 let rightPrice = null

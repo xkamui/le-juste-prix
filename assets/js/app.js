@@ -8,7 +8,12 @@ const guessButton  = document.querySelector('#guessButton')
 const mainCounter  = document.querySelector('#mainCounter')
 const tooHighHint  = document.querySelector('#tooHigh')
 const tooLowsHint  = document.querySelector('#tooLows')
-
+const youWinrHint  = document.querySelector('#youWinr')
+const playAgain    = document.querySelector('#playAgainBox')
+const playAgainBtn = document.querySelector('#playAgain')
+const totalTries   = document.querySelector('#totalTries')
+const winrDetails  = document.querySelector('#winrDetails')
+const commentTries = document.querySelector('#commentsTries')
 
 //## Specific vars 
 let rightPrice = null

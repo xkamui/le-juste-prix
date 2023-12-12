@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Le juste prix !!</title>
+    <title>The Price is Right!!</title>
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
@@ -17,9 +17,14 @@
         <div class="content">
             <h1>Guess the number!</h1>
             <div class="guessing">
-                <input type="text" name="" id="playerPrice">
-                <button id="guessPrice" type="button">Guess</button>
-                <span class="note">Find the correct price between <span id="minPrice"></span> and <span id="maxPrice"></span></span>
+                <form action="#" id="guessPrice" autocomplete="off">
+                    <input type="text" name="" id="playerPrice" autocomplete="off">
+                    <button id="guessButton" type="submit">Guess</button>
+                    <span class="note">Find the correct price between <span id="minPrice"></span> and <span id="maxPrice"></span></span>
+                </form>
+            </div>
+            <div class="counter">
+                <span id="mainCounter">0</span>
             </div>
         </div>
     </section>

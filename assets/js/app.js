@@ -3,10 +3,13 @@ const splashScreen = document.querySelector('#splashScreen')
 const startButton  = document.querySelector('#startGame')
 const gameScreen   = document.querySelector('#playGame')
 const playerGuess  = document.querySelector('#playerPrice')
-const guessButton  = document.querySelector('#guessPrice')
+const guessForm    = document.querySelector('#guessPrice')
+const guessButton  = document.querySelector('#guessButton')
+const mainCounter  = document.querySelector('#mainCounter')
 
 //## Specific vars 
-let justePrix = null
+let rightPrice = null
+let countTry = 0
 const minPrice = 0
 const maxPrice = 2000
 

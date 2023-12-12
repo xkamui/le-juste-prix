@@ -55,6 +55,7 @@ display: block;
 }
 
 #playGame .content {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -64,6 +65,17 @@ display: block;
     height: 100%;
     margin: 0 auto;
 }
+
+#playGame .counter {
+position: absolute;
+top: 0;
+right: 0;
+}
+
+#playGame .counter #mainCounter {
+
+}
+
 
 #playGame .content h1 {
     
@@ -77,13 +89,31 @@ flex-direction: column;
 #playGame .content .guessing input#playerPrice {
 width: 100%;
 text-align: center;
+border: 1px solid transparent;
 border-radius: 4px;
 background: #FFFFFF;
 }
 
-#playGame .content .guessing button#guessPrice {
+#playGame .content .guessing button#guessButton {
 width: 100%;
 text-align: center;
 border-radius: 4px;
 background: #F5F5F5;
+}
+
+#playGame .content .guessing input#playerPrice.right {
+    border: 3px solid #009900;
+}
+
+#playGame .content .guessing input#playerPrice.wrong {
+    border: 3px solid #CC0000;
+    animation: horizontal-shaking 0.35s infinite;
+}
+
+@keyframes horizontal-shaking {
+ 0% { transform: translateX(0) }
+ 25% { transform: translateX(5px) }
+ 50% { transform: translateX(-5px) }
+ 75% { transform: translateX(5px) }
+ 100% { transform: translateX(0) }
 }

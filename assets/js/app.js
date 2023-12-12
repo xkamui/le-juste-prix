@@ -1,28 +1,20 @@
 //## Most used elements
 const splashScreen = document.querySelector('#splashScreen')
 const startButton  = document.querySelector('#startGame')
+const gameScreen   = document.querySelector('#playGame')
+const playerGuess  = document.querySelector('#playerPrice')
+const guessButton  = document.querySelector('#guessPrice')
 
+//## Specific vars 
 let justePrix = null
 const minPrice = 0
 const maxPrice = 2000
 
-startButton.addEventListener('click', function() {
+//## Initialize the game values
+initValues()
 
-    justePrix = getRandomNumber()
-    splashScreen.classList.add('closed')
-    console.log(justePrix)
-
-}, false)
-
-
-
-
-
-function getRandomNumber() {
-
-    min = Math.ceil(minPrice)
-    max = Math.floor(maxPrice)
-
-    return Math.floor(Math.random() * (max - min + 1)) + min
-
+//## Settle limit from the vars defined above.
+function initValues() {
+    document.querySelector('#minPrice').textContent = minPrice
+    document.querySelector('#maxPrice').textContent = maxPrice
 }

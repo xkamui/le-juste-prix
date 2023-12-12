@@ -1,10 +1,13 @@
 body {
     position: relative;
-    min-width: 100vh;
+    min-width: 100vw;
     min-height: 100vh;
     overflow: hidden;
 }
 
+/* ***************************************************************************************** *** */
+/* *** SPLASH SCREEN *********************************************************************** *** */
+/* ***************************************************************************************** *** */
 #splashScreen {
     position: absolute;
     top: 0;
@@ -14,6 +17,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
     background: red;
     z-index: 1;
     transition: all 400ms ease-out;
@@ -21,6 +25,7 @@ body {
 
 #splashScreen.closed {
     opacity: 0;
+    z-index: -1;
 }
 
 #startGame {
@@ -30,4 +35,55 @@ body {
     border: none;
     outline: none;
     cursor: pointer;
+}
+
+/* ***************************************************************************************** *** */
+/* *** PLAY GAME *************************************************************************** *** */
+/* ***************************************************************************************** *** */
+#playGame {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    background: blue;
+}
+
+#playGame.playing {
+display: block;
+}
+
+#playGame .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 300px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+#playGame .content h1 {
+    
+}
+
+#playGame .content .guessing {
+display: flex;
+flex-direction: column;
+}
+
+#playGame .content .guessing input#playerPrice {
+width: 100%;
+text-align: center;
+border-radius: 4px;
+background: #FFFFFF;
+}
+
+#playGame .content .guessing button#guessPrice {
+width: 100%;
+text-align: center;
+border-radius: 4px;
+background: #F5F5F5;
 }
